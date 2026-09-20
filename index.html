@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Arpit Bairathi — Enterprise Sales, Business Development and Strategic Accounts professional.">
+<meta name="author" content="Arpit Bairathi">
+<title>Arpit Bairathi | Enterprise Sales & Business Development</title>
+<style>
+:root{
+  --bg:#071018;--bg2:#0b1722;--card:rgba(255,255,255,.055);--line:rgba(255,255,255,.12);
+  --text:#f5f7fa;--muted:#aab6c3;--accent:#d9b36c;--accent2:#f0d79e;--max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 85% 10%,rgba(217,179,108,.12),transparent 28%),linear-gradient(180deg,var(--bg),#050b10);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(var(--max),92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(7,16,24,.72);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:.12em;font-size:14px}
+.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:28px;color:var(--muted);font-size:14px}
+.navlinks a:hover{color:#fff}
+.menu{display:none;background:none;border:1px solid var(--line);color:white;padding:8px 10px;border-radius:10px}
+.hero{min-height:100vh;display:grid;place-items:center;padding:130px 0 80px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(217,179,108,.12);border-radius:50%;right:-220px;top:100px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}
+.eyebrow{color:var(--accent);font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-.055em;margin-bottom:24px}
+h1 span{color:var(--accent)}
+.hero h2{font-size:clamp(20px,2.4vw,30px);font-weight:500;color:#dce4eb;margin-bottom:22px}
+.lead{font-size:18px;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:14px}
+.btn.primary{background:var(--accent);color:#091017;border-color:var(--accent)}
+.btn:hover{transform:translateY(-2px)}
+.profile-card{aspect-ratio:4/5;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));display:flex;align-items:flex-end;padding:28px;box-shadow:0 30px 90px rgba(0,0,0,.3);position:relative;overflow:hidden}
+.profile-card:before{content:"AB";position:absolute;font-size:170px;font-weight:900;letter-spacing:-.08em;color:rgba(217,179,108,.10);top:45px;left:28px}
+.profile-card .caption{position:relative;z-index:1}
+.caption strong{display:block;font-size:22px}.caption small{color:var(--muted)}
+section{padding:105px 0}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:48px}
+.kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:800}
+h3{font-size:clamp(32px,4vw,52px);letter-spacing:-.04em;line-height:1.05;margin-top:10px}
+.section-intro{max-width:530px;color:var(--muted)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.about p{font-size:20px;color:#d5dde5}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:45px}
+.stat{padding:24px;border:1px solid var(--line);background:var(--card);border-radius:20px}
+.stat b{display:block;font-size:32px;color:var(--accent)}.stat span{color:var(--muted);font-size:13px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{padding:28px;border:1px solid var(--line);background:var(--card);border-radius:22px;min-height:190px}
+.card .num{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.12em}.card h4{font-size:22px;margin:20px 0 10px}.card p{color:var(--muted)}
+.timeline{position:relative;margin-top:20px}.timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:1px;background:var(--line)}
+.role{position:relative;padding:0 0 55px 60px}.dot{position:absolute;left:10px;top:7px;width:17px;height:17px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 7px rgba(217,179,108,.1)}
+.role .date{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:.08em}.role h4{font-size:27px;margin:7px 0}.role .company{color:#dfe6ed;font-weight:600}.role p{color:var(--muted);max-width:780px;margin-top:10px}
+.achievement{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.award{border:1px solid var(--line);border-radius:22px;padding:28px;background:linear-gradient(145deg,rgba(217,179,108,.09),rgba(255,255,255,.03))}
+.award b{font-size:22px}.award p{color:var(--muted);margin-top:8px}
+.contact{border:1px solid var(--line);border-radius:30px;padding:60px;background:radial-gradient(circle at 90% 0,rgba(217,179,108,.16),transparent 35%),var(--card)}
+.contact h3{max-width:720px}.contact-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+footer{padding:35px 0;color:var(--muted);border-top:1px solid var(--line);font-size:13px}
+@media(max-width:850px){
+ .navlinks{display:none}.menu{display:block}
+ .hero-grid,.about{grid-template-columns:1fr}.hero{padding-top:115px}.profile-card{max-width:430px}
+ .stats{grid-template-columns:repeat(2,1fr)}.cards,.achievement{grid-template-columns:1fr}
+ .section-head{display:block}.section-intro{margin-top:18px}
+}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+  <a class="logo" href="#top">ARPIT <span>BAIRATHI</span></a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#impact">Impact</a><a href="#contact">Contact</a>
+  </div>
+  <button class="menu" onclick="document.querySelector('.navlinks').style.display='flex'">Menu</button>
+</div></nav>
+
+<main id="top">
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="eyebrow">Enterprise Sales • Business Development • Strategic Accounts</div>
+   <h1>Arpit <span>Bairathi.</span></h1>
+   <h2>Building revenue. Growing relationships. Creating business impact.</h2>
+   <p class="lead">Sales and business operations professional with experience across enterprise technology, insurance and automotive — combining consultative selling, client leadership, P&amp;L understanding and execution.</p>
+   <div class="actions"><a class="btn primary" href="#experience">Explore my journey</a><a class="btn" href="mailto:arpitb93.ab@gmail.com">Let's connect</a></div>
+  </div>
+  <div class="profile-card"><div class="caption"><strong>Enterprise Sales Professional</strong><small>Jaipur, India · Open to global opportunities</small></div></div>
+ </div>
+</section>
+
+<section id="about"><div class="container">
+ <div class="section-head"><div><div class="kicker">01 / About</div><h3>Commercial thinking.<br>Human relationships.</h3></div><p class="section-intro">A career built around revenue growth, customer relationships, operational discipline and solving complex business requirements.</p></div>
+ <div class="about"><div><p>I work at the intersection of sales, technology, business operations and customer relationships — from enterprise software solutions to insurance and automotive operations.</p></div>
+ <div><p style="color:var(--muted)">My approach is consultative: understand the business problem, align stakeholders, build the right solution, negotiate commercially and stay accountable through execution.</p></div></div>
+ <div class="stats" id="impact">
+  <div class="stat"><b>₹15Cr+</b><span>Annual dealership revenue managed</span></div>
+  <div class="stat"><b>700+</b><span>POSP network managed</span></div>
+  <div class="stat"><b>₹1,000Cr+</b><span>Enterprise client turnover exposure</span></div>
+  <div class="stat"><b>15+</b><span>Sales team members mentored</span></div>
+ </div>
+</div></section>
+
+<section id="expertise"><div class="container">
+ <div class="section-head"><div><div class="kicker">02 / Expertise</div><h3>What I bring<br>to the table.</h3></div></div>
+ <div class="cards">
+  <article class="card"><div class="num">01</div><h4>Enterprise Sales</h4><p>Managing complex B2B sales cycles, stakeholder conversations and solution-led enterprise growth.</p></article>
+  <article class="card"><div class="num">02</div><h4>Strategic Accounts</h4><p>Building trusted relationships with high-value clients and understanding complex business requirements.</p></article>
+  <article class="card"><div class="num">03</div><h4>Business Development</h4><p>Developing market strategies, acquiring new accounts and expanding existing relationships.</p></article>
+  <article class="card"><div class="num">04</div><h4>Technology Sales</h4><p>Connecting enterprise requirements with GST, compliance and software solutions.</p></article>
+  <article class="card"><div class="num">05</div><h4>Sales Leadership</h4><p>Training, mentoring and scaling teams with a focus on performance and execution.</p></article>
+  <article class="card"><div class="num">06</div><h4>P&amp;L &amp; Operations</h4><p>Commercial ownership across sales, operations, finance, compliance and process improvement.</p></article>
+ </div>
+</div></section>
+
+<section id="experience"><div class="container">
+ <div class="section-head"><div><div class="kicker">03 / Career</div><h3>A journey across<br>three industries.</h3></div></div>
+ <div class="timeline">
+  <div class="role"><div class="dot"></div><div class="date">JAN 2026 — PRESENT</div><h4>Enterprise Sales Manager</h4><div class="company">KDK Softwares India Private Limited · Jaipur</div><p>Enterprise software sales focused on GST and compliance solutions, strategic account development, customized solutions and cross-functional delivery for large organizations across India.</p></div>
+  <div class="role"><div class="dot"></div><div class="date">NOV 2021 — DEC 2025</div><h4>Senior Sales Manager — Health, Life &amp; SME Insurance</h4><div class="company">Atelier Insurance Broking Private Limited · Jaipur</div><p>Led end-to-end sales operations across multiple insurance portfolios and managed a network of 700 POSPs while developing sales strategies, improving engagement and supporting growth.</p></div>
+  <div class="role"><div class="dot"></div><div class="date">AUG 2016 — SEP 2021</div><h4>General Manager — Sales, Operations &amp; Service</h4><div class="company">Bairathi Honda · Jaipur</div><p>Directed end-to-end dealership operations, coordinated sales, service, finance and operations, managed compliance and supply-chain processes, and drove annual revenue exceeding ₹15 crore.</p></div>
+ </div>
+</div></section>
+
+<section><div class="container">
+ <div class="section-head"><div><div class="kicker">04 / Recognition</div><h3>Results worth<br>remembering.</h3></div></div>
+ <div class="achievement">
+  <div class="award"><b>Best Enterprise Advisor</b><p>KDK Softwares · 2026</p></div>
+  <div class="award"><b>Best Team Leader</b><p>Atelier Insurance Broking · 2023</p></div>
+  <div class="award"><b>Best Team — Rajasthan</b><p>Atelier Insurance Broking · 2023</p></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="container">
+ <div class="contact"><div class="kicker">05 / Let's connect</div><h3>Have an opportunity, partnership or conversation in mind?</h3>
+ <p class="section-intro" style="margin-top:18px">I'm open to conversations around Enterprise Sales, Business Development, Strategic Accounts, Technology Sales and leadership opportunities.</p>
+ <div class="contact-row">
+  <a class="btn primary" href="mailto:arpitb93.ab@gmail.com">Email me</a>
+  <a class="btn" href="https://www.linkedin.com/in/arpitbairathi" target="_blank" rel="noopener">LinkedIn</a>
+  <a class="btn" href="tel:+917737222720">Call</a>
+  <a class="btn" href="https://wa.me/917737222720" target="_blank" rel="noopener">WhatsApp</a>
+ </div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="container">© 2026 Arpit Bairathi. Built as a personal professional portfolio.</div></footer>
+</body>
+</html>
